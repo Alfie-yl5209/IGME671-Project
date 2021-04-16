@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{b1b0e87a-6027-4fd9-bde1-d4b8afdff7a9}">
+		<property name="assetPath">
+			<value>SFX/Howl_Distant.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>5.65031746031746</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6c9e63aa-423a-47d8-bc3a-5a9b5d6334b6}</destination>
+		</relationship>
+	</object>
+</objects>

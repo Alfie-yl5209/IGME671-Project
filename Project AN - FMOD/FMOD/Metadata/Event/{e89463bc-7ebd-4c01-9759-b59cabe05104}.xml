@@ -226,6 +226,15 @@
 		<property name="length">
 			<value>0.29999999999999993</value>
 		</property>
+		<property name="delayType">
+			<value>0</value>
+		</property>
+		<property name="minimumTimeDelay">
+			<value>1000</value>
+		</property>
+		<property name="maximumTimeDelay">
+			<value>4600</value>
+		</property>
 		<property name="minimumTimeBetweenSounds">
 			<value>6000</value>
 		</property>

@@ -772,7 +772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Ambience/Ambience
+  Event: event:/Ambient/Ambience
   PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1

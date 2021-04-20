@@ -15,11 +15,11 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637544677375098168
+  lastModified: 637545095494844678
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1022
+    Value: 1060
   Exists: 1
 --- !u!114 &-8510139102751322722
 MonoBehaviour:
@@ -171,10 +171,33 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637544677375068250
+  lastModified: 637545095494824738
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-2595061518211478180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Push Box
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Push Box
+  guid: 535c6d71d8c3e04e8c8ca45e0966e8a3
+  Banks:
+  - {fileID: -5219945816211530795}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3643
 --- !u!114 &-1840870246362193165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,16 +286,37 @@ MonoBehaviour:
   - {fileID: -5566283105130135740}
   - {fileID: -425476918941184567}
   - {fileID: -7376579387551708875}
-  - {fileID: -6845381763025935849}
   - {fileID: -7814652139882138973}
+  - {fileID: -2595061518211478180}
+  - {fileID: 9131558809417939539}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5219945816211530795}
   StringsBanks:
   - {fileID: -8530111719731263650}
-  stringsBankWriteTime: 637544677375098168
+  stringsBankWriteTime: 637545095494844678
   cacheVersion: 6
 --- !u!114 &3729182257303147503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/Mood
+  m_EditorClassIdentifier: 
+  Name: Mood
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &4760397951401074728
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -398,6 +442,30 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &9131558809417939539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient/Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient/Ambience
+  guid: bc6394e8bd7e014c9759b59cabe05104
+  Banks:
+  - {fileID: -5219945816211530795}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4760397951401074728}
   MinDistance: 0
   MaxDistance: 0
   Length: 0

@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{e89463bc-7ebd-4c01-9759-b59cabe05104}">
 		<property name="name">
-			<value>Ambient</value>
+			<value>Ambience</value>
 		</property>
 		<property name="outputFormat">
 			<value>5</value>
 		</property>
 		<relationship name="folder">
-			<destination>{ed862300-58e8-4dd8-a366-4b356f8f4ac0}</destination>
+			<destination>{82577409-9f0c-4280-bc58-a497b83281dd}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{f84e0f00-ce31-4630-a9df-01cfc719907e}</destination>
@@ -557,7 +557,7 @@
 			<value>0.35000000000000003</value>
 		</property>
 		<property name="value">
-			<value>5</value>
+			<value>15</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{e989f379-2d7e-4d62-b92a-b2edc7d7a0b1}">

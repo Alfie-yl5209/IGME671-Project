@@ -39,6 +39,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2683144150904673903}
     m_Modifications:
+    - target: {fileID: 1919580817043243360, guid: 364442063101e0c4aa382ef6e75a744a,
+        type: 3}
+      propertyPath: pathOpen
+      value: event:/SFX/Door Open
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919580817043243360, guid: 364442063101e0c4aa382ef6e75a744a,
+        type: 3}
+      propertyPath: pathClose
+      value: event:/SFX/Door Close
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919580817043243375, guid: 364442063101e0c4aa382ef6e75a744a,
+        type: 3}
+      propertyPath: m_Spring.damper
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 1919580817043243375, guid: 364442063101e0c4aa382ef6e75a744a,
         type: 3}
       propertyPath: m_ConnectedAnchor.x

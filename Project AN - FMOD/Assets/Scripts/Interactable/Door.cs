@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using FMOD.Studio;
+using FMODUnity;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +13,13 @@ public class Door : Interactable
     private Rigidbody rig;
     private Quaternion closeRotation;
     private Vector3 closePosition;
+
+    [FMODUnity.EventRef]
+    public string pathOpen;
+    [FMODUnity.EventRef]
+    public string pathClose;
+    EventInstance doorOpen;
+    EventInstance doorClose;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +36,9 @@ public class Door : Interactable
             rig.isKinematic = true;
         else
             rig.isKinematic = false;
+
+        doorOpen = RuntimeManager.CreateInstance(pathOpen);
+        doorClose = RuntimeManager.CreateInstance(pathClose);
     }
 
     // Update is called once per frame
@@ -52,7 +64,8 @@ public class Door : Interactable
     {
         Debug.Log("Open");
         rig.isKinematic = false;
-        rig.velocity = (transform.position - PlayerMovement.instance.transform.position).normalized * 2f;
+        rig.velocity = (transform.position - PlayerMovement.instance.transform.position).normalized * 4f;
+        doorOpen.start();
     }
 
     void Close()
@@ -66,6 +79,7 @@ public class Door : Interactable
         rig.isKinematic = true;
         transform.rotation = closeRotation;
         transform.position = closePosition;
+        doorClose.start();
     }
 
     void SmashedOpen()

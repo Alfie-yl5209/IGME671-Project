@@ -9,14 +9,32 @@ public class PlayerStats : MonoBehaviour
 
     public int Health;
     public int Stamina;
+    [Range(0, 100f)]
+    public float Stress;
+    [Range(0, 5f)]
+    public float StressReductionSpeed;
+    [Range(0, 100f)]
+    public float StressResistant;
+
     public int Speed_walk;
     public int Speed_run;
     public int Speed_sneak;
+
     public float Range_interact;
 
     private void Awake()
     {
         stats = this;
+    }
+
+    private void Update()
+    {
+        if (Stress > 0)
+            Stress -= StressReductionSpeed * Time.deltaTime;
+        else
+            Stress = 0;
+
+        SoundManager.manager.ambience.SetParameter("Mood", Stress / 100f);
     }
 
     void OnDrawGizmos()

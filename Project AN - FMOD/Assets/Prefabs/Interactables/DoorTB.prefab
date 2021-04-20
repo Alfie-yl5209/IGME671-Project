@@ -130,7 +130,7 @@ HingeJoint:
   m_UseSpring: 1
   m_Spring:
     spring: 0
-    damper: 2
+    damper: 1.5
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -166,6 +166,8 @@ MonoBehaviour:
   entityMask:
     serializedVersion: 2
     m_Bits: 1024
+  pathOpen: 
+  pathClose: 
 --- !u!1 &6672836786500617869
 GameObject:
   m_ObjectHideFlags: 0

@@ -41,6 +41,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4561315186135122195, guid: d711dc650bf82db438a26ed0174abbfb,
         type: 3}
+      propertyPath: m_Spring.damper
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561315186135122195, guid: d711dc650bf82db438a26ed0174abbfb,
+        type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 0
       objectReference: {fileID: 0}
@@ -53,6 +58,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561315186135122204, guid: d711dc650bf82db438a26ed0174abbfb,
+        type: 3}
+      propertyPath: pathOpen
+      value: event:/SFX/Door Open
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561315186135122204, guid: d711dc650bf82db438a26ed0174abbfb,
+        type: 3}
+      propertyPath: pathClose
+      value: event:/SFX/Door Close
       objectReference: {fileID: 0}
     - target: {fileID: 8751653890563163889, guid: d711dc650bf82db438a26ed0174abbfb,
         type: 3}

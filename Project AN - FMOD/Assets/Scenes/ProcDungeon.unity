@@ -316,6 +316,7 @@ GameObject:
   - component: {fileID: 356273524}
   - component: {fileID: 356273523}
   - component: {fileID: 356273522}
+  - component: {fileID: 356273526}
   m_Layer: 14
   m_Name: Cube
   m_TagString: Untagged
@@ -355,7 +356,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ae978f0f17047ad4f81d9dac53207b88, type: 2}
+  - {fileID: 2100000, guid: d0a7817c952573646a1b86bff29ffdc0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -393,12 +394,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356273521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.88, y: 0.5, z: 3.78}
+  m_LocalPosition: {x: 4.26, y: 0.5, z: 6.27}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &356273526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356273521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f90946ea0a03c45b468bbd869bec7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 4
+  intensity: 6
 --- !u!1 &622304428
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +738,151 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance_ratio: 0.144
+--- !u!1 &848606466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 848606468}
+  - component: {fileID: 848606470}
+  - component: {fileID: 848606467}
+  - component: {fileID: 848606472}
+  - component: {fileID: 848606469}
+  - component: {fileID: 848606471}
+  m_Layer: 0
+  m_Name: Sound Sources
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &848606467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848606466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambience/Ambience
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: Mood
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!4 &848606468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848606466}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.0976024, y: 42.163773, z: -40.65362}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1107805424}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &848606469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848606466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Run
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &848606470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848606466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c39653a40b59e7447b1eaaecf1be30c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ambience: {fileID: 848606467}
+  playerWalk: {fileID: 848606472}
+  playerRun: {fileID: 848606469}
+  playerSneak: {fileID: 848606471}
+--- !u!114 &848606471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848606466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Sneak
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &848606472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848606466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Walk
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &855043314
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,7 +1008,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.0976024, y: -42.163773, z: 40.65362}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 848606468}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1019,6 +1180,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1479651023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4545820434409345823, guid: 8d100529c44325b43a110e2925c67f0d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1595227277}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1479651024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479651023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!143 &1481304179 stripped
 CharacterController:
   m_CorrespondingSourceObject: {fileID: -1442994887705942542, guid: 8d100529c44325b43a110e2925c67f0d,
@@ -1050,7 +1231,7 @@ PrefabInstance:
     - target: {fileID: -5994753274828923035, guid: 8d100529c44325b43a110e2925c67f0d,
         type: 3}
       propertyPath: walkSpeed
-      value: 20
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -5994753274828923035, guid: 8d100529c44325b43a110e2925c67f0d,
         type: 3}
@@ -1060,12 +1241,12 @@ PrefabInstance:
     - target: {fileID: -5994753274828923035, guid: 8d100529c44325b43a110e2925c67f0d,
         type: 3}
       propertyPath: sneakSpeed
-      value: 12
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -5994753274828923035, guid: 8d100529c44325b43a110e2925c67f0d,
         type: 3}
       propertyPath: sprintSpeed
-      value: 40
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: -5994753274828923035, guid: 8d100529c44325b43a110e2925c67f0d,
         type: 3}
@@ -1074,8 +1255,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 327037094368086370, guid: 8d100529c44325b43a110e2925c67f0d,
         type: 3}
+      propertyPath: Stress
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 327037094368086370, guid: 8d100529c44325b43a110e2925c67f0d,
+        type: 3}
       propertyPath: Range_interact
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 327037094368086370, guid: 8d100529c44325b43a110e2925c67f0d,
+        type: 3}
+      propertyPath: StressResistant
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 327037094368086370, guid: 8d100529c44325b43a110e2925c67f0d,
+        type: 3}
+      propertyPath: StressReductionSpeed
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 2321566733099364637, guid: 8d100529c44325b43a110e2925c67f0d,
         type: 3}
@@ -1090,7 +1286,7 @@ PrefabInstance:
     - target: {fileID: 3923739569993559769, guid: 8d100529c44325b43a110e2925c67f0d,
         type: 3}
       propertyPath: pushPower
-      value: 100
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 4545820434409345795, guid: 8d100529c44325b43a110e2925c67f0d,
         type: 3}

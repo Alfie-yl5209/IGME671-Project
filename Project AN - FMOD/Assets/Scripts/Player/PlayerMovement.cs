@@ -75,14 +75,21 @@ public class PlayerMovement : MonoBehaviour
         switch (state)
         {
             case MovementState.idle:
+                SoundManager.manager.PlayerStop();
                 break;
             case MovementState.walking:
+                SoundManager.manager.PlayerMovementState("Walk");
+                SoundManager.manager.PlayerMove();
                 accelerationSpeed = walkSpeed;
                 break;
             case MovementState.sneaking:
+                SoundManager.manager.PlayerMovementState("Sneak");
+                SoundManager.manager.PlayerMove();
                 accelerationSpeed = sneakSpeed;
                 break;
             case MovementState.running:
+                SoundManager.manager.PlayerMovementState("Run");
+                SoundManager.manager.PlayerMove();
                 accelerationSpeed = sprintSpeed;
                 break;
             default:

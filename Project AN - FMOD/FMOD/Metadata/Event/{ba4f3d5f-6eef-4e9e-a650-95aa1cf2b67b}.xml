@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{ba4f3d5f-6eef-4e9e-a650-95aa1cf2b67b}">
-		<property name="note" />
 		<property name="name">
 			<value>Door Close</value>
 		</property>
@@ -60,7 +59,7 @@
 			<destination>{d12e4287-8a66-48b6-b05e-f019897f2fef}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{a61aeaaf-b72c-4fee-be36-a25ae8711184}</destination>
+			<destination>{c38fbf9d-f227-4ff1-9d02-f4e4a47ec07a}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{416e5fa7-c255-4403-b97f-2fa3b35dd3de}" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{c209c1b6-6905-45fe-9d6b-085e653ec3b7}">
+	<object class="AudioFile" id="{c4af9c14-b0df-4721-996d-7692b4fd7af6}">
 		<property name="assetPath">
 			<value>SFX/Friction_Wood.wav</value>
 		</property>

@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/SFX/Push Box
+  Event: event:/SFX/Push Box Heavy
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
@@ -132,3 +132,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bc98146f3dfca74e945a911ed87faad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  frictionSound: {fileID: 0}

@@ -468,7 +468,7 @@ public class ProcDungeon : MonoBehaviour
                     furnitures[furnitures.Count - 1].AddComponent<Rigidbody>();
                     Rigidbody rig = furnitures[furnitures.Count - 1].GetComponent<Rigidbody>();
                     rig.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
-                    rig.mass = sizeX * sizeY / 2;
+                    rig.mass = sizeX * sizeY / 3;
                     rig.drag = 3f;
                     rig.interpolation = RigidbodyInterpolation.Interpolate;
                 }

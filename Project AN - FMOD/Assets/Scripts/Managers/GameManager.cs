@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            Quit();
         }
     }
 
@@ -23,5 +23,10 @@ public class GameManager : MonoBehaviour
     {
         GUI.Box(new Rect(10, 0, 200, 20), "WASD: Move Esc: Quit");
         GUI.Box(new Rect(10, 20, 200, 20), "Click doors to interact.");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
